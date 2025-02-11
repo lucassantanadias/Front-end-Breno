@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Página</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <!-- carrega o css de forma mais eficiente -->
   </head>
   <body>
     <div class="container">
@@ -14,10 +20,7 @@
         com Deus.
       </p>
       <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/SEU_VIDEO_ID"
-          allowfullscreen
-        ></iframe>
+        <iframe src="allowfullscreen"></iframe>
       </div>
       <a
         href="https://pay.kiwify.com.br/iguBc1G"
@@ -30,7 +33,7 @@
       <div class="feature" id="feature" style="display: none">
         <div class="feature-item">
           <img
-            src="assets/security.png"
+            src="assets/security.webp"
             alt="Ícone de Compra Segura"
             class="feature-icon"
           />
@@ -39,7 +42,7 @@
         </div>
         <div class="feature-item">
           <img
-            src="assets/lock.png"
+            src="assets/lock.webp"
             alt="Ícone de Privacidade"
             class="feature-icon"
           />
@@ -48,7 +51,7 @@
         </div>
         <div class="feature-item">
           <img
-            src="assets/garantia.png"
+            src="assets/garantia.webp"
             alt="Ícone de Protegida"
             class="feature-icon"
           />
